@@ -9,22 +9,22 @@ use App\Models\GiphyResults;
 class Controller
 {
     public function trending(): GiphyResults{
-        $giphyClient = new ClientTemplate();
-        $gifCollection = $giphyClient->trending();
-        return new GiphyResults('gifs.view.twig', ['gifs' => $gifCollection]);
+        $clientTemplate = new ClientTemplate();
+        $gifs = $clientTemplate->trending();
+        return new GiphyResults('gifs.view.twig', ['gifs' => $gifs]);
     }
 
     public function random(): GiphyResults{
-        $giphyClient = new ClientTemplate();
-        $gifCollection = $giphyClient->random();
-        return new GiphyResults('gifs.view.twig', ['gifs' => $gifCollection]);
+        $clientTemplate = new ClientTemplate();
+        $gifs = $clientTemplate->random();
+        return new GiphyResults('gifs.view.twig', ['gifs' => $gifs]);
     }
 
 
     public function search(): GiphyResults{
-        $giphyClient = new ClientTemplate();
-        $gifCollection = $giphyClient->search();
-        return new GiphyResults('gifs.view.twig', ['gifs' => $gifCollection]);
+        $clientTemplate = new ClientTemplate();
+        $gifs = $clientTemplate->trending();
+        return new GiphyResults('gifs.view.twig', ['gifs' => $gifs]);
     }
 
     public function home(): void{

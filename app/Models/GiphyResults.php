@@ -4,13 +4,13 @@ namespace App\Models;
 
 class GiphyResults
 {
-    private string $title;
+    private string $path;
     private string $URLs;
 
     public function __construct(string $path, string $URLs)
     {
-        $this->title = $path;
-        $this->URLs = URLs;
+        $this->path = $path;
+        $this->URLs = $URLs;
     }
 
     public function getPath(): string

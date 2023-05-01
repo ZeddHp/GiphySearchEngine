@@ -1,25 +1,49 @@
+/* Use a modern font family for the headings */
 h1 {
     margin-top: 20px;
-    height: 5px;
-    font-size: 50px;
+    font-size: 3rem;
     color: seagreen;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Use a gradient background for the body */
 body {
-    background-color: -moz-buttondefault;
+    background: linear-gradient(to bottom, #f6f6f6, #ddd);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Make the form inputs stand out with a border and background color */
+form {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+    border: 2px solid seagreen;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Make the gif container responsive and center it horizontally */
+.gif-container {
+    max-width: 100%;
+    margin: 30px auto;
+    background: whitesmoke;
     text-align: center;
 }
 
-form {
-    font-size: 20px;
-    color: red;
-    line-height: 30px;
+/* Style the button with a gradient background and hover effect */
+button {
+    background: linear-gradient(to bottom, #4CAF50, #3E8E41);
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.gif-container {
-    width: 1000px;
-    line-height: 5;
-    margin: auto;
-    background: whitesmoke;
+button:hover {
+    background-color: #3E8E41;
 }

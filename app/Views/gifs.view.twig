@@ -1,0 +1,13 @@
+<link href="/css/style.css" rel="stylesheet">
+<div class="gif-container">
+    {% if gifs == null %}
+        <h2>No gifs found!</h2>
+    {% else %}
+        {% for gif in gifs %}
+            <a href="{{ gif.url }}" target="_blank">
+                <img src="{{ gif.url }}">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {% endfor %}
+    {% endif %}
+</div>

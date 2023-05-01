@@ -1,0 +1,25 @@
+h1 {
+    margin-top: 20px;
+    height: 5px;
+    font-size: 50px;
+    color: seagreen;
+    letter-spacing: 5px;
+}
+
+body {
+    background-color: -moz-buttondefault;
+    text-align: center;
+}
+
+form {
+    font-size: 20px;
+    color: red;
+    line-height: 30px;
+}
+
+.gif-container {
+    width: 1000px;
+    line-height: 5;
+    margin: auto;
+    background: whitesmoke;
+}
